@@ -17,6 +17,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders["YANDEX_CLIENT_ID"] = "c5b240db9164496fb36c57f4460694c2"
     }
 
     buildTypes {
@@ -27,6 +29,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    buildFeatures {
+        viewBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
