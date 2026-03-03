@@ -20,7 +20,9 @@ android {
 
         manifestPlaceholders["YANDEX_CLIENT_ID"] = "c5b240db9164496fb36c57f4460694c2"
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -29,9 +31,6 @@ android {
                 "proguard-rules.pro"
             )
         }
-    }
-    buildFeatures {
-        viewBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -52,5 +51,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation(libs.yandex.login.sdk.android.ng)
+    implementation("com.github.aakumykov:yandex-login-sdk-android-ng:3.1.0")
 }
