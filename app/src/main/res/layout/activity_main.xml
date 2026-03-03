@@ -2,11 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/loginType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/loginTypeNative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Через приложение"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/loginTypeWebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Через WebView" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/authButton"
@@ -14,16 +33,10 @@
         android:layout_height="wrap_content"
         android:text="Авторизоваться" />
 
-    <Button
-        android:id="@+id/deauthButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Забыть авторизацию" />
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/authTokenView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Результат"
-        android:paddingTop="16dp"/>
+        android:text="" />
+
 </LinearLayout>
