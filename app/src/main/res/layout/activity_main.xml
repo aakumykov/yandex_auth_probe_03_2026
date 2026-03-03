@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="yandex_auth_probe_03_2026"
+        android:textAlignment="center"
+        android:padding="6dp"/>
+
     <Button
         android:id="@+id/authButton"
         android:layout_width="match_parent"
