@@ -1,4 +1,4 @@
-package com.github.aakumykov.qwerty_ktx
+package com.github.aakumykov.yandex_auth_probe_03_2026.cloud_authenticator
 
 import androidx.activity.ComponentActivity
 import androidx.activity.result.ActivityResultLauncher

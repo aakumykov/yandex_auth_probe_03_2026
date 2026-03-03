@@ -1,4 +1,7 @@
-package com.github.aakumykov.yandex_auth_probe_03_2026.extensions
+package com.github.aakumykov.yandex_auth_probe_03_2026
+
+import kotlin.jvm.javaClass
+import kotlin.let
 
 val Throwable.errorMsg: String get() = message ?: javaClass.name
 
